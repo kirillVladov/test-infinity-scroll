@@ -1,0 +1,76 @@
+@import "./layout/header";
+
+* {
+  box-sizing: border-box;
+  //font-family: "Montserrat";
+}
+
+.content {
+  padding: 75px;
+  min-width: 100vw;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+a,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+p {
+  margin: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.disabled {
+  &:focus {
+    outline: none;
+  }
+
+  &:not(.vd-tli__icon) {
+    & svg {
+      path {
+        stroke: #aeaeae !important;
+        fill: #aeaeae !important;
+      }
+
+      path {
+        fill: #aeaeae !important;
+      }
+      rect {
+        fill: #aeaeae !important;
+      }
+    }
+  }
+
+  cursor: not-allowed !important;
+}
+
+.display-none {
+  display: none;
+}
