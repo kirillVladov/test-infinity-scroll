@@ -14,13 +14,13 @@ export type BeerItem = {
     ph: number,
     attenuation_level: number,
     volume: {
-    value: number,
-        unit: string
-},
+        value: number,
+            unit: string
+    },
     boil_volume: {
-    value: number,
-        unit: string
-},
+        value: number,
+            unit: string
+    },
     method: {
     mash_temp: [
         {
@@ -37,81 +37,81 @@ export type BeerItem = {
                 unit: string
         }
     },
-    twist: null | number
-},
+        twist: null | number
+    },
     ingredients: {
-    malt: [
-        {
-            name: string,
-            amount: {
-                value: number,
-                unit: string
+        malt: [
+            {
+                name: string,
+                amount: {
+                    value: number,
+                    unit: string
+                }
+            },
+            {
+                name: string,
+                amount: {
+                    value: number,
+                    unit: string
+                }
+            },
+            {
+                name: string,
+                amount: {
+                    value: number,
+                    unit: string
+                }
             }
-        },
-        {
-            name: string,
-            amount: {
-                value: number,
-                unit: string
+        ],
+            hops: [
+            {
+                name: string,
+                amount: {
+                    value: number,
+                    unit: string
+                },
+                add: string,
+                attribute: string
+            },
+            {
+                name: string,
+                amount: {
+                    value: number,
+                    unit: string
+                },
+                add: string,
+                attribute: string
+            },
+            {
+                name: string,
+                amount: {
+                    value: number,
+                    unit: string
+                },
+                add: string,
+                attribute: string
+            },
+            {
+                name: string,
+                amount: {
+                    value: number,
+                    unit: string
+                },
+                add: string,
+                attribute: string
+            },
+            {
+                name: string,
+                amount: {
+                    value: number,
+                    unit: string
+                },
+                add: string,
+                attribute: string
             }
-        },
-        {
-            name: string,
-            amount: {
-                value: number,
-                unit: string
-            }
-        }
-    ],
-        hops: [
-        {
-            name: string,
-            amount: {
-                value: number,
-                unit: string
-            },
-            add: string,
-            attribute: string
-        },
-        {
-            name: string,
-            amount: {
-                value: number,
-                unit: string
-            },
-            add: string,
-            attribute: string
-        },
-        {
-            name: string,
-            amount: {
-                value: number,
-                unit: string
-            },
-            add: string,
-            attribute: string
-        },
-        {
-            name: string,
-            amount: {
-                value: number,
-                unit: string
-            },
-            add: string,
-            attribute: string
-        },
-        {
-            name: string,
-            amount: {
-                value: number,
-                unit: string
-            },
-            add: string,
-            attribute: string
-        }
-    ],
+        ],
         yeast: string
-},
+    },
     food_pairing: string[],
     brewers_tips: string,
     contributed_by: string
