@@ -12,7 +12,7 @@ export const useBeerStore = defineStore("beer-store", {
         list: [],
     }),
     actions: {
-        getList(page: number) {
+        getList(page: number): void {
             const preloaderStore = usePreloaderStore();
 
             if(page === 1) {
@@ -20,7 +20,7 @@ export const useBeerStore = defineStore("beer-store", {
             }
 
             getBeerList(page)
-                .then((result: BeerItem[]): void => {
+                .then((result: BeerItem[]) => {
                     if(!Array.isArray(result)) return;
 
                     this.$patch((state: State) => {
